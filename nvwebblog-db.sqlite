@@ -1,0 +1,15 @@
+--
+-- File generated with SQLiteStudio v3.3.3 on Sun Sep 4 17:34:21 2022
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Users
+CREATE TABLE `Users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `email` VARCHAR(255), `password` VARCHAR(255), `name` VARCHAR(255), `lastname` VARCHAR(255), `status` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);
+INSERT INTO Users (id, email, password, name, lastname, status, createdAt, updatedAt) VALUES (1, 'thanarat@gmail.com', '09082544', 'Thanarat', 'Thongchaona', 'active', '2019-03-05 13:40:13.802 +00:00', '2022-09-01 03:53:05.885 +00:00');
+INSERT INTO Users (id, email, password, name, lastname, status, createdAt, updatedAt) VALUES (2, 'aa@gmail.com', '1122', 'abc', 'def', 'active', '2022-09-04 17:50:21.802 +00:00', '2022-09-04 17:50:21.802 +00:00');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
